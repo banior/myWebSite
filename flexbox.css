@@ -1,0 +1,91 @@
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.container {
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s ease;
+}
+
+.letterB, .letterE {
+    position: absolute;
+    outline: none;
+}
+
+.letterB {
+    top: 10px;
+    left: 10px;
+}
+
+.letterE {
+    top: 140px;
+    left: 140px;
+}
+
+.pepe {
+    width: 200px;
+    height: 200px;
+}
+
+
+.container:hover .letterB {
+    animation: moveLetterDown 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+.container:hover .letterE {
+    animation: moveLetterUp 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+.container:focus-within .letterB {
+    animation: rotateLetterB 2.5s ease forwards;
+}
+
+.container:focus-within .letterE {
+    animation: rotateLetterE 2.5s ease forwards;
+}
+
+.container:focus-within {
+    animation: scaleContainer 2s ease 2.5s forwards;
+}
+
+@keyframes scaleContainer {
+    0% { transform: scale(1.0); }
+    100% { transform: scale(0.7); }
+}
+
+@keyframes rotateLetterB {
+    0% { transform: translate(85px, 65px) rotate(0deg); }
+    70% { transform: translate(85px, 65px) rotate(360deg); opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes rotateLetterE {
+    0% { transform: translate(-85px, -65px) rotate(0deg); }
+    70% { transform: translate(-85px, -65px) rotate(360deg); opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes moveLetterUp {
+    0% { transform: translate(0, 0); scale: 0.8}
+    30% { transform: translate(-130px, 0px); }
+    70% { transform: translate(-90px, -50px); } 
+    100% { transform: translate(-85px, -65px); scale: 1.0}
+}
+
+@keyframes moveLetterDown {
+    0% { transform: translate(0, 0); scale: 0.8}
+    30% { transform: translate(130px, 0px); }
+    70% { transform: translate(90px, 50px); }
+    100% { transform: translate(85px, 65px); scale: 1.0}
+}

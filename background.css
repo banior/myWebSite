@@ -1,0 +1,54 @@
+.pic
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.background{
+    position: absolute;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height:  200px;
+}
+.sky{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 120px;
+    width: 200px;
+    background: linear-gradient(to bottom right, rgb(240, 175, 54), rgb(255, 255, 255));
+}
+.ground{
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    height: 80px;
+    width: 200px;
+    background: linear-gradient(to right, rgb(134, 207, 140), rgb(208, 241, 208), rgb(2, 47, 2), rgb(74, 117, 74));
+
+}
+.sun{
+    position: absolute;
+    top: -12px;
+    left: -11px;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(242, 172, 85);
+    border-radius: 50%;
+}
+.ring-container{
+    position: absolute;
+    top: 185px;
+    left: 0px;
+    width: 200px;
+    height: 40px;
+}
+.ring{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid #56dd76;
+    border-radius: 50%;
+    box-sizing: border-box;
+}

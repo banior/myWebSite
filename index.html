@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/dc13e77caf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <p class="big-letter">E</p>
+                    <p class="company-name">YEM</p>
+                    <p class="slogan">portfolio</p>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Sources</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>C# developer</p>
+                <h1>Hi, I'm <span>Egor Babin</span></h1>
+            </div>
+        </div>
+    </div>
+<!-------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="my-image" src="images/photo_2024-11-07_20-54-07.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        I’m a versatile developer with a strong foundation in both design and programming. I have experience with Adobe applications, including Illustrator, Photoshop, and After Effects, enabling me to create visually engaging content. My technical expertise extends to application development on the Unity game engine, where I utilize USS and UXML for UI design. Additionally, I specialize in building microservices with ASP.NET and developing web applications using Blazor, combining efficient back-end services with interactive front-end experiences.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Adobe Creative Suite</span><br>Illustrator, Photoshop, After Effects, and other Adobe applications</li>
+                            <li><span>Unity Development</span><br>USS and UXML for UI/UX design</li>
+                            <li><span>C#</span><br>ASP NET, Blazor, Web API, Entity Framework, Dapper</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Adobe Packet</span><br>I have created many commercial videos for museums</li>
+                            <li><span>Unity Development</span><br>Currently, I am developing interactive information applications for museums across the country</li>
+                            <li><span>ASP NET</span><br>I am creating microservices in ASP.NET to support back-end functionality for web and mobile applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Polytechnic University</span><br>Currently pursuing a degree in applied programming</li>
+                            <li><span>Unity Education</span><br>Completed courses to deepen expertise in Unity development</li>
+                            <li><span>Metanit</span><br>Studied various programming and web development concepts through Metanit resources</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+    <!-- -------------services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Sources</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Adobe</h2>
+                    <p>Adobe delivers everything schools and students need to develop essential creative and soft skills.</p>
+                    <a href="https://www.adobe.com/education.html" target="_blank">Read more</a> 
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Unity</h2>
+                    <p>Enrich learning and teach real-time 3D skills for high-growth careers in game design, XR development and more with Unity Education plans and learning resources.</p>
+                    <a href="https://unity.com/learn/educators" target="_blank">Read more</a> 
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>C# and .NET</h2>
+                    <p>This site is dedicated to various programming languages ​​and technologies, computers, mobile platforms and IT technologies.</p>
+                    <a href="https://metanit.com/" target="_blank">Read more</a> 
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-------------portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/photo_2023-10-01_15-17-46.jpg"></img>
+                    <div class="layer">
+                        <h3>Конструкторское бюро Туполева</h3>
+                        <p>Видеоконтент для музея Конструкторского бюро Туполева, рассказывая о достижениях и истории этого легендарного авиационного предприятия.</p>
+                        <a href="https://www.tupolev.ru/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/photo_2024-09-03_05-57-00.jpg"></img>
+                    <div class="layer">
+                        <h3>МБОУ "СОШ №68 г. Челябинска"</h3>
+                        <p>Приложение для школы в Челябинске с информацией о Челябинской области с небольшими игровыми блоками</p>
+                        <a href="https://school68chel.ru/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/photo_2024-02-13_22-44-57.jpg"></img>
+                    <div class="layer">
+                        <h3>Ангарский музей часов</h3>
+                        <p>Интерактивная информационная игра для музея часов на движке Unity. Игра была создана с целью увлекательно и познавательно рассказать посетителям о различных аспектах часового дела и истории часов.</p>
+                        <a href="https://clock-angarsk.ru/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/photo_2024-07-15_10-16-55.jpg"></img>
+                    <div class="layer">
+                        <h3>Якутский музей</h3>
+                        <p>Приложение-бродилка по якутской усадьбе на Unity, которое позволяет пользователю исследовать различные локации, связанные с культурой и бытом Якутии.</p>
+                        <a href="https://yakutmuseum.ru/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/photo_2024-07-19_12-25-34.jpg"></img>
+                    <div class="layer">
+                        <h3>Музей Пестрецы</h3>
+                        <p>Интерактивное приложение о героях ВОВ</p>
+                        <a href="https://km-pestr.kazan.muzkult.ru/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/photo_2024-11-07_23-37-30.jpg"></img>
+                    <div class="layer">
+                        <h3>Рисунок CSS. 2024</h3>
+                        <p>Рисунок, созданный с помощью стилевой таблицы pic.css. Размер 200х200px.</p>
+                        <a href="bear.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/photo_2024-11-07_23-55-26.jpg"></img>
+                    <div class="layer">
+                        <h3>Flexbox-бренд. 2024. Без JS</h3>
+                        <p>Компонент рекламного ролика с базовым размером</p>
+                        <a href="flexbox.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/photo_2024-11-08_00-03-48.jpg"></img>
+                    <div class="layer">
+                        <h3>DOM-Тест. 2024</h3>
+                        <p>Тест с рандомизацией вопросов</p>
+                        <a href="index1.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/images (1).jpeg"></img>
+                    <div class="layer">
+                        <h3>"Викинг"</h3>
+                        <p>Остальные мои работы можно посмотреть на сайте "Викинга"</p>
+                        <a href="https://viking.ru/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" onclick="toggleBlocks()">View All</a>
+        </div>
+    </div>
+</body>
+<footer>
+    <!-------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>1234567890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyrigth">
+            <p>Made with <i class="fas fa-heart"></i> by me</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openMenu(){
+            sidemenu.style.right = "0";
+        }
+        function closeMenu(){
+            sidemenu.style.right = "-200px"
+        }
+        
+    </script>
+    <script>
+        let isExpanded = false;
+
+        function toggleBlocks() {
+            const hiddenBlocks = document.querySelectorAll('.work:nth-child(n+4)');
+            hiddenBlocks.forEach(block => {
+                block.style.display = isExpanded ? 'none' : 'block';
+            });
+
+            const btn = document.querySelector('.btn');
+            btn.textContent = isExpanded ? 'View All' : 'Hide';
+            isExpanded = !isExpanded;
+        }
+    </script>
+</footer>
+</html>
